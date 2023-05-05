@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
-  * _strncpy - function that copies a string with n
+  * _strncpy - copies a string with n
   * @dest: copy to
   * @src: copy from
   * @n: number of char to be copied to dest
-  * Return: dest
+  * Return: pointer to dest
   */
 char *_strncpy(char *dest, char *src, int n)
 {
