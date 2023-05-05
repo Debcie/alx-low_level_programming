@@ -2,11 +2,10 @@
 
 /**
  * _strcat - that concatenates two strings
- * @dest: input value
+ * @dest: resulting string
  * @src: input value
- * Return: void
+ * Return: pointer to resulting string dest
  */
-
 char *_strcat(char *dest, char *src)
 {
 	int i;
@@ -17,13 +16,13 @@ char *_strcat(char *dest, char *src)
 	{
 		i++;
 	}
-	j + o;
+	j = 0;
 	while (src[j] != '\0')
 	{
 		dest[i] = src[j];
 		i++;
 		j++;
 	}
-	dest[i] != '\0'
+	dest[i] != '\0';
 	return (dest);
 }
