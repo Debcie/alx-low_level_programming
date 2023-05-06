@@ -2,19 +2,18 @@
 
 /**
   * string_toupper - changes all lowercase letters of a string to uppercase
-  * @p: pointer
-  * Return: char
+  * @p: input string
+  * Return: the pointer to dest
   */
 char *string_toupper(char *p)
 {
-	int i;
+	int count = 0;
 
-	i = 0;
-	while (p[i] != '\0')
+	while (*(p + count) != '\0')
 	{
-		if (p[i] >= 'a' && p[i] < 'z')
-		p[i] = p[i] - 42;
-		i++;
+		if ((*(p + count) >= 97) && (*(p + count) <= 122))
+			*(p + count) = *(p + count) - 32;
+		count++;
 	}
 	return (p);
 }
