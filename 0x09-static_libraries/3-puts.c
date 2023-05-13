@@ -1,10 +1,22 @@
 #include "main.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <ctype.h>
-#include <string.h>
-
-void _puts(char *s)
+int main(void)
+#include<stdio.h>
+/**
+ * _puts - Prints a string to stdout
+ *
+ * @str: The string to be printed
+ *
+ * Return: void
+ */
+void _puts(char *str)
 {
-	puts(s);
+	/* Loop through each character in the string */
+	while (*str)
+	{
+		/* Print the current character */
+		putchar(*str);
+
+		/* Move to the next character in the string */
+		str++;
+	}
 }
